@@ -1,24 +1,5 @@
-# README
+# Andi Asistencia
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Repositorio del codigo fuente de ansi asistencia, en la parte baja se encuentran links de la documentación.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Cronograma de actividades](https://docs.google.com/document/d/14m6GY5nKakbwQHCX5ANURBFHd-0sPZAmuHOAJBfGJEQ/edit)
