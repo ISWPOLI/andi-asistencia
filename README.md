@@ -18,8 +18,8 @@ Repositorio del codigo fuente de ansi asistencia, en la parte baja se encuentran
 * **Presentación**:
   * Despliegue de la solución servidor publico
   * Interface Responsive (compatibilidad móvil)
-  * Manejo de repositorios (El integrante del grupo que no registre actividad no tendrá calificación)
-  * https://github.com/ISWPOLI
+  * [Manejo de repositorios](https://github.com/ISWPOLI/andi-asistencia) (El integrante del grupo que no registre actividad no tendrá calificación)
+
 
 ## Requerimientos 
 
