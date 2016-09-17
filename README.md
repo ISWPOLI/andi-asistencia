@@ -17,8 +17,8 @@ Repositorio del codigo fuente de Andi Asistencia, en la parte baja se encuentran
 * **Coherencia con la documentación**
 * **Presentación**:
   * Despliegue de la solución servidor publico
-  * Interface Responsive (compatibilidad móvil)
-  * [Manejo de repositorios](https://github.com/ISWPOLI/andi-asistencia) (El integrante del grupo que no registre actividad no tendrá calificación)
+  * [Interface Responsive](https://github.com/ISWPOLI/andi-asistencia/blob/master/app/views/home/index.html.erb) _(compatibilidad móvil)_
+  * [Manejo de repositorios](https://github.com/ISWPOLI/andi-asistencia) _(El integrante del grupo que no registre actividad no tendrá calificación)_
 
 
 ## Requerimientos 
