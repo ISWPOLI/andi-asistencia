@@ -6,6 +6,8 @@ Repositorio del codigo fuente de ansi asistencia, en la parte baja se encuentran
 * [Descripción del problema](https://docs.google.com/document/d/1Ercx9ejdMEjbB_gYV-iGYD2tZHbScjrl-Ho8ZHp4GKw/edit)
 * [Descripción de Requerimientos](https://docs.google.com/document/d/1KQsXBjPQv4HRcqJutRnLRDC6CHrLljyThoFt_WcD2E8/edit)
 
+![Screenshot](https://raw.githubusercontent.com/ISWPOLI/andi-asistencia/master/screenshot.png)
+
 ## Implemetacion
 
 * **Funcionamiento**
@@ -16,8 +18,8 @@ Repositorio del codigo fuente de ansi asistencia, en la parte baja se encuentran
 * **Presentación**:
   * Despliegue de la solución servidor publico
   * Interface Responsive (compatibilidad móvil)
-  * Manejo de repositorios (El integrante del grupo que no registre actividad no tendrá calificación)
-  * https://github.com/ISWPOLI
+  * [Manejo de repositorios](https://github.com/ISWPOLI/andi-asistencia) (El integrante del grupo que no registre actividad no tendrá calificación)
+
 
 ## Requerimientos 
 
