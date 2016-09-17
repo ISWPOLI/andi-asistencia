@@ -22,7 +22,7 @@ Repositorio del codigo fuente de ansi asistencia, en la parte baja se encuentran
 ## Requerimientos 
 
 * Objetivos SMART
-* Modelado del negocio (Canvas)
+* [Modelado del negocio (Canvas)](https://drive.google.com/open?id=0B9uDbLG8dnf9LVVnOWhrVVhtcEE)
 * Documento de levantamiento de requerimientos (deseable IEE 830)
 * Modelado de casos de Uso + fichas.
 * Diagramas de clases
