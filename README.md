@@ -11,9 +11,9 @@ Repositorio del codigo fuente de Andi Asistencia, en la parte baja se encuentran
 ## Implemetacion
 
 * **Funcionamiento**
-  * CRUD de entidades
-  * Mínimo 1 Función especializadas para el negocio.
-  * 1 Entrega de valor para el negocio.
+  * CRUD de entidades: [Crear usuario](https://github.com/ISWPOLI/andi-asistencia/blob/master/app/views/devise/registrations/new.html.erb)
+  * Mínimo 1 Función especializadas para el negocio: [Iniciar sesión](https://github.com/ISWPOLI/andi-asistencia/blob/master/app/views/devise/sessions/new.html.erb)
+  * 1 Entrega de valor para el negocio: [Como usuario puedo autenticarme en el sistema](https://github.com/ISWPOLI/andi-asistencia/blob/master/app/views/devise/sessions/new.html.erb)
 * **Coherencia con la documentación**
 * **Presentación**:
   * Despliegue de la solución servidor publico
