@@ -30,7 +30,7 @@ Repositorio del codigo fuente de ansi asistencia, en la parte baja se encuentran
 
 ## Planeación
 * Estimación por puntos de función.
-* Diagramas de navegación Mookups
+* [Diagramas de navegación Mookups](https://drive.google.com/open?id=0B9PsQjWzsUurbEdEdko4dzVhbmc)
 * History Map- Cronograma.
 * Selección de metodología 
 * Perfilado del equipo de trabajo
