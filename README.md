@@ -31,7 +31,7 @@ Repositorio del codigo fuente de ansi asistencia, en la parte baja se encuentran
 ## Planeación
 * Estimación por puntos de función.
 * [Diagramas de navegación Mookups](https://drive.google.com/open?id=0B9PsQjWzsUurbEdEdko4dzVhbmc)
-* History Map- Cronograma.
+* [History Map](https://drive.google.com/open?id=0B-SiTuU1detkVk9SaTZYUVZodkE) - [Cronograma](https://docs.google.com/document/d/14m6GY5nKakbwQHCX5ANURBFHd-0sPZAmuHOAJBfGJEQ/edit?usp=sharing).
 * Selección de metodología 
 * Perfilado del equipo de trabajo
 * BurnDown chart Seguimiento de actividades (velocidad de código)
