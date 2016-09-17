@@ -39,9 +39,9 @@ Repositorio del codigo fuente de Andi Asistencia, en la parte baja se encuentran
 * BurnDown chart Seguimiento de actividades (velocidad de código)
 
 ## Pruebas
-* Pruebas unitarias
+* [Pruebas unitarias](https://github.com/ISWPOLI/andi-asistencia/blob/master/test/controllers/home_controller_test.rb)
 * Documentación del Código fuente.
-* Logs de pruebas.
+* Logs de pruebas
 
 
 
