@@ -34,6 +34,9 @@ gem 'jbuilder', '~> 2.5'
 # Authentication.
 gem 'devise', '~> 4.2.0'
 
+# Bootstrap forms.
+gem 'bootstrap_form', '~> 2.5.0'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 
