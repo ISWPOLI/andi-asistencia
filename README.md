@@ -19,20 +19,17 @@ Repositorio del codigo fuente de Andi Asistencia, en la parte baja se encuentran
 
 ## Requerimientos 
 
-* Objetivos SMART
+* [Objetivos SMART] (https://drive.google.com/drive/folders/0B9PsQjWzsUurTmNFeHNfNm5ndGM)
 * [Modelado del negocio (Canvas)](https://drive.google.com/open?id=0B9uDbLG8dnf9LVVnOWhrVVhtcEE)
-* Documento de levantamiento de requerimientos (deseable IEE 830)
+* [Documento de levantamiento de requerimientos] (https://drive.google.com/drive/folders/0B9PsQjWzsUurTmNFeHNfNm5ndGM)
 * Modelado de casos de Uso + fichas.
-* Diagramas de clases
-* Diagramas de secuencia
+
 
 ## Planeación
-* Estimación por puntos de función.
 * [Diagramas de navegación Mookups](https://drive.google.com/open?id=0B9PsQjWzsUurbEdEdko4dzVhbmc)
-* [History Map](https://drive.google.com/open?id=0B-SiTuU1detkVk9SaTZYUVZodkE) - [Cronograma](https://docs.google.com/document/d/14m6GY5nKakbwQHCX5ANURBFHd-0sPZAmuHOAJBfGJEQ/edit?usp=sharing).
-* Selección de metodología 
-* Perfilado del equipo de trabajo
-* BurnDown chart Seguimiento de actividades (velocidad de código)
+* [History Map](https://drive.google.com/open?id=0B-SiTuU1detkVk9SaTZYUVZodkE)
+* [Cronograma](https://docs.google.com/document/d/14m6GY5nKakbwQHCX5ANURBFHd-0sPZAmuHOAJBfGJEQ/edit?usp=sharing)
+
 
 ## Pruebas
 * [Pruebas unitarias](https://github.com/ISWPOLI/andi-asistencia/blob/master/test/controllers/home_controller_test.rb)
