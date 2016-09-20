@@ -19,10 +19,10 @@ Repositorio del codigo fuente de Andi Asistencia, en la parte baja se encuentran
 
 ## Requerimientos 
 
-* [Objetivos SMART] (https://drive.google.com/drive/folders/0B9PsQjWzsUurTmNFeHNfNm5ndGM)
-* [Modelado del negocio (Canvas)](https://drive.google.com/open?id=0B9uDbLG8dnf9LVVnOWhrVVhtcEE)
-* [Documento de levantamiento de requerimientos] (https://drive.google.com/drive/folders/0B9PsQjWzsUurTmNFeHNfNm5ndGM)
-* Modelado de casos de Uso + fichas.
+* [Objetivos SMART] (https://drive.google.com/open?id=0B9uDbLG8dnf9TGI4N1o4Q296eHc)
+* [Modelado del negocio (Canvas)](https://drive.google.com/open?id=0B9uDbLG8dnf9VU1tODN0Ykh4NDQ)
+* [Documento de levantamiento de requerimientos] (https://drive.google.com/open?id=1AFv_Pon-oEN3P1JxGWoXarrmoVFL425K09PdH-yHvg8)
+* [Modelado de casos de Uso + fichas] (https://drive.google.com/open?id=0B-SiTuU1detkQjhDMVNfZWJ1N2s)
 
 
 ## Planeación
