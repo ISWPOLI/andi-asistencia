@@ -7,4 +7,7 @@ Rails.application.routes.draw do
   # Site root.
   root 'home#index'
 
+  # Clients
+  resources :client
+
 end
