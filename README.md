@@ -36,7 +36,7 @@ Repositorio del codigo fuente de Andi Asistencia, en la parte baja se encuentran
 ## Pruebas
 * [Pruebas unitarias](https://github.com/ISWPOLI/andi-asistencia/blob/master/test/controllers/home_controller_test.rb)
 * Documentación del Código fuente.
-* Logs de pruebas
+* [Logs de pruebas](https://travis-ci.org/ISWPOLI/andi-asistencia/builds)
 
 
 
