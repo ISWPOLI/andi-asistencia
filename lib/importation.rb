@@ -8,7 +8,7 @@ class Importation
     end
   end
 
-  def do_with_row(hash)
+  def process_row(hash)
     raise Exception.new('Method not implemented')
   end
 
