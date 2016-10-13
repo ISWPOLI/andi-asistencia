@@ -1,0 +1,26 @@
+<div class="container client-detail">
+    <h1><%= @client.first_name %> <%= @client.last_name %></h1>
+
+    <h5 class="text-muted">Número de documento</h5>
+    <h2><%= @client.document_number %></h2>
+
+    <h5 class="text-muted">Numero celular</h5>
+    <h2><%= @client.cellphone_number %></h2>
+
+    <h5 class="text-muted">Ciudad</h5>
+    <h2><%= @client.city %></h2>
+
+    <h5 class="text-muted">Estado</h5>
+    <% if @client.is_active %>
+        <h2>Activo</h2>
+    <% else %>
+        <h2>Inactivo</h2>
+    <% end %>
+
+    <% if @client.is_active %>
+        <h5 class="text-muted">Desactivar usuario</h5>
+        <a class="btn btn-danger" data-confirm="¿Estas seguro?" href="<%= client_deactivate_path(@client) %>">Desactivar</a>
+    <% end %>
+
+</div>
+
