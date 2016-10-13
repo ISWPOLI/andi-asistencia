@@ -1,3 +1,35 @@
-<div class="container">
-    <h1>Client list</h1>
+<div class="container container-sm">
+    <h1>Lista de clientes</h1>
+
+
+    <table class="table">
+        <thead class="thead-default">
+            <tr>
+                <th>#</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Número de documento</th>
+                <th>Numero celular</th>
+                <th>Ciudad</th>
+            </tr>
+      </thead>
+      <tbody>
+        <% if !@client_list.blank? %>
+            <% for client in @client_list %>
+                <tr>
+                    <th scope="row"><%= client.id %></th>
+                    <td><a href="<%= client_path(client) %>"><%= client.first_name %></a></td>
+                    <td><%= client.last_name %></td>
+                    <td><%= client.document_number %></td>
+                    <td><%= client.cellphone_number %></td>
+                    <td><%= client.city %></td>
+                </tr>
+            <% end %>
+        <% else %>
+            <tr>
+                <td colspan="6" scope="row"><center>No encontramos clientes con los criterios que especificaste.</center></td>
+            </tr>
+        <% end %>
+        </tbody>
+    </table>
 </div>

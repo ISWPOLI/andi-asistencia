@@ -39,7 +39,8 @@
                 <div class="card-block">
                     <h3 class="card-title">Clientes</h3>
                     <p class="card-text">Ver listado de clientes activos e inactivos</p>
-                    <%= link_to 'Ver clientes', client_index_path, class: 'btn btn-info' %>
+                    <%= link_to 'Activos', "#{client_index_path}?status=active", class: 'btn btn-sm btn-info' %>
+                    <%= link_to 'Inactivos', "#{client_index_path}?status=inactive", class: 'btn btn-sm btn-info' %>
                 </div>
             </div>
         </div>
