@@ -10,6 +10,12 @@
     <h5 class="text-muted">Ciudad</h5>
     <h2><%= @client.city %></h2>
 
+    <h5 class="text-muted">Dirección</h5>
+    <h2><%= @client.address %></h2>
+
+    <h5 class="text-muted">Campaña</h5>
+    <h2><%= @client.campaign %></h2>
+
     <h5 class="text-muted">Estado</h5>
     <% if @client.is_active %>
         <h2>Activo</h2>
