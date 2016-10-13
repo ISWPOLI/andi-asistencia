@@ -1,6 +1,7 @@
 <div class="container container-sm">
-    <h1>Lista de clientes</h1>
-
+    <h2 class="text-xs-center">Clientes</h2>
+    <p class="text-muted text-xs-center">Listado de clientes <strong><% if params[:status] == 'active' %>activos<% else %>inactivos<% end %></strong></p>
+    <br>
 
     <table class="table">
         <thead class="thead-default">
