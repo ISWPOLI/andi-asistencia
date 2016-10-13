@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   devise_for :users
 
   # Clients
-  resources :client
+  resources :client do
+    get '/deactivate/', to: 'client#deactivate'
+  end
 
 end

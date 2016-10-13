@@ -17,10 +17,9 @@
         <h2>Inactivo</h2>
     <% end %>
 
-
     <% if @client.is_active %>
         <h5 class="text-muted">Desactivar usuario</h5>
-        <a class="btn btn-danger" href="#">Desactivar</a>
+        <a class="btn btn-danger" data-confirm="¿Estas seguro?" href="<%= client_deactivate_path(@client) %>">Desactivar</a>
     <% end %>
 
 </div>

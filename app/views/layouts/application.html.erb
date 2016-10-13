@@ -16,6 +16,14 @@
             </div>
         </nav>
 
-    <%= yield %>
+        <div class="container">
+            <% flash.each do |key, value| %>
+                <div class="alert alert-info">
+                  <%= value %>
+                </div>
+            <% end %>
+        </div>
+
+        <%= yield %>
   </body>
 </html>
