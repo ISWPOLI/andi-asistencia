@@ -9,7 +9,16 @@ Rails.application.routes.draw do
 
   # Clients
   resources :client do
-    get '/deactivate/', to: 'client#deactivate'
+    get '/deactivate', to: 'client#deactivate'
+  end
+
+  # Importations.
+  scope '/importation' do
+    get '/sales', to: 'importation#sales'
+    post '/sales', to: 'importation#import_sales_xls'
+
+    # get '/payments', to: 'importation#payments'
+    # post '/payments', to: 'importation#import_payments_xls'
   end
 
 end

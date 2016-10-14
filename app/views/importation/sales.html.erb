@@ -1,0 +1,54 @@
+<div class="container">
+
+    <h2 class="text-xs-center">Cargar ventas</h2>
+    <p class="text-muted text-xs-center">Importación de archivo generado por call center. Carga un archivo excel (.xlsx) con las siguientes columnas:</p>
+    <br>
+
+    <div class="card">
+        <table class="table">
+            <thead class="thead-default">
+                <tr>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Cédula</th>
+                    <th>Celular</th>
+                    <th>Campana</th>
+                    <th>Direccion</th>
+                    <th>Ciudad</th>
+                    <th>Fecha de venta</th>
+                    <th>Valor</th>
+                    <th>No tarjeta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Camilo Andres</td>
+                    <td>Trejos</td>
+                    <td>1086754876</td>
+                    <td>3117569933</td>
+                    <td>Compensar</td>
+                    <td>Calle 95 # 7-40</td>
+                    <td>Bogotá</td>
+                    <td>24/09/2016</td>
+                    <td>20000</td>
+                    <td>1234</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="font-italic">Los nombres de las columnas del Excel deben ser exactamente como se muestran en esta tabla.</p>
+    <br>
+
+    <%= bootstrap_form_tag url: sales_path, :html => {:multipart => true} do |f| %>
+            <div class="form-group">
+                <label>Cargar archivo de ventas</label>
+                <%= file_field_tag "file", class: 'form-control-file' %>
+                <small class="form-text text-muted">Archivo .xlsx</small>
+            </div>
+
+            <div class="form-group">
+                <%= f.submit 'Cargar archivo', class: 'btn btn-success' %>
+            </div>
+        <% end %>
+
+</div>

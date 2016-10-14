@@ -9,17 +9,20 @@ class SaleImportation < Importation
       campaign: 'Campana',
       address: 'Direccion',
       city: 'Ciudad',
-      is_active: true,
       sale_date: 'Fecha de venta',
       amount: 'Valor',
       card_number: 'No tarjeta'
     }
+
+    @clients = 0
+    @message = ''
   end
 
   def process_row(hash)
     hash = hash.merge({is_active: true})
 
     if Client.find_by_document_number(hash[:document_number])
+      @clients = @clients + 1
       return
     end
 
@@ -29,6 +32,7 @@ class SaleImportation < Importation
     )
 
     hash[:campaign] = campaign
+    hash[:is_active] = true
 
     # Client.
     client = Client.create(
@@ -51,6 +55,12 @@ class SaleImportation < Importation
       amount: hash[:amount],
       card_number: hash[:card_number]
     )
+
+    @clients = @clients + 1
+  end
+
+  def success_message()
+    "#{@clients} ventas fueron procesadas."
   end
 
 end

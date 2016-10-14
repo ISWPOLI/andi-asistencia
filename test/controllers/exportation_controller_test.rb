@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ImportingControllerTest < ActionDispatch::IntegrationTest
+class ExportationControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
