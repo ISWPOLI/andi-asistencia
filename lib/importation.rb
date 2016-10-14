@@ -1,9 +1,15 @@
 class Importation
 
-  def import_xls(file)
-    xlsx = Roo::Spreadsheet.open(file.path)
+  def initialize
+    @columns = {}
+  end
 
-    sheet.each(first_name: 'Nombre', last_name: 'Apellido') do |hash|
+  def import_xls(file)
+    # xlsx = Roo::Spreadsheet.open(file.path)
+    xlsx = Roo::Spreadsheet.open(file)
+    sheet = xlsx.sheet(0)
+
+    sheet.each(@columns) do |hash|
       self.process_row(hash)
     end
   end
