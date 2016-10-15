@@ -53,7 +53,8 @@ class SaleImportation < Importation
       client: client,
       campaign: campaign,
       amount: hash[:amount],
-      card_number: hash[:card_number]
+      card_number: hash[:card_number],
+      sale_date: hash[:sale_date]
     )
 
     @clients = @clients + 1
