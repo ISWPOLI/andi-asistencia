@@ -2,8 +2,8 @@
 
 one:
   client_id: 1
-  id_sale: 1
+  sale_id: 1
 
 two:
   client_id: 1
-  id_sale: 1
+  sale_id: 1

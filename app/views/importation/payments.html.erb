@@ -1,0 +1,48 @@
+<div class="container">
+
+    <h2 class="text-xs-center">Cargar pagos</h2>
+    <p class="text-muted text-xs-center">Importación de archivo generado por entidad de cobro. Carga un archivo excel (.xlsx) con las siguientes columnas:</p>
+    <br>
+
+    <div class="card">
+        <table class="table">
+            <thead class="thead-default">
+                <tr>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Cédula</th>
+                    <th>Celular</th>
+                    <th>Fecha</th>
+                    <th>Valor</th>
+                    <th>Venta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Camilo Andres</td>
+                    <td>Trejos</td>
+                    <td>1086754876</td>
+                    <td>3117569933</td>
+                    <td>15/10/2016</td>
+                    <td>20000</td>
+                    <td>9</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="font-italic">Los nombres de las columnas del Excel deben ser exactamente como se muestran en esta tabla.</p>
+    <br>
+
+    <%= bootstrap_form_tag url: payments_path, :html => {:multipart => true} do |f| %>
+            <div class="form-group">
+                <label>Cargar archivo de pagos</label>
+                <%= file_field_tag "file", class: 'form-control-file' %>
+                <small class="form-text text-muted">Archivo .xlsx</small>
+            </div>
+
+            <div class="form-group">
+                <%= f.submit 'Cargar archivo', class: 'btn btn-success' %>
+            </div>
+        <% end %>
+
+</div>

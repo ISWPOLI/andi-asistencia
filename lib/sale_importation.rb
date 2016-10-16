@@ -15,7 +15,6 @@ class SaleImportation < Importation
     }
 
     @clients = 0
-    @message = ''
   end
 
   def process_row(hash)
@@ -32,7 +31,6 @@ class SaleImportation < Importation
     )
 
     hash[:campaign] = campaign
-    hash[:is_active] = true
 
     # Client.
     client = Client.create(
@@ -53,7 +51,8 @@ class SaleImportation < Importation
       client: client,
       campaign: campaign,
       amount: hash[:amount],
-      card_number: hash[:card_number]
+      card_number: hash[:card_number],
+      sale_date: hash[:sale_date]
     )
 
     @clients = @clients + 1

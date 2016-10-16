@@ -9,7 +9,8 @@ class Importation
     xlsx = Roo::Spreadsheet.open(file)
     sheet = xlsx.sheet(0)
 
-    sheet.each(@columns) do |hash|
+    sheet.each_with_index(@columns) do |hash, index|
+      next if index == 0
       self.process_row(hash)
     end
 

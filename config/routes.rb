@@ -17,8 +17,8 @@ Rails.application.routes.draw do
     get '/sales', to: 'importation#sales'
     post '/sales', to: 'importation#import_sales_xls'
 
-    # get '/payments', to: 'importation#payments'
-    # post '/payments', to: 'importation#import_payments_xls'
+    get '/payments', to: 'importation#payments'
+    post '/payments', to: 'importation#import_payments_xls'
   end
 
 end
