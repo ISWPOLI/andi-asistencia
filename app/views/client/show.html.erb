@@ -1,32 +1,64 @@
-<div class="container client-detail">
+<div class="container container-sm client-detail">
     <h1><%= @client.first_name %> <%= @client.last_name %></h1>
+    <hr>
 
-    <h5 class="text-muted">Número de documento</h5>
-    <h2><%= @client.document_number %></h2>
+    <h6 class="text-muted">Número de documento</h6>
+    <h4><%= @client.document_number %></h4>
 
-    <h5 class="text-muted">Numero celular</h5>
-    <h2><%= @client.cellphone_number %></h2>
+    <h6 class="text-muted">Numero celular</h6>
+    <h4><%= @client.cellphone_number %></h4>
 
-    <h5 class="text-muted">Ciudad</h5>
-    <h2><%= @client.city %></h2>
+    <h6 class="text-muted">Ciudad</h6>
+    <h4><%= @client.city %></h4>
 
-    <h5 class="text-muted">Dirección</h5>
-    <h2><%= @client.address %></h2>
+    <h6 class="text-muted">Dirección</h6>
+    <h4><%= @client.address %></h4>
 
-    <h5 class="text-muted">Campaña</h5>
-    <h2><%= @client.campaign %></h2>
+    <h6 class="text-muted">Campaña</h6>
+    <h4><%= @client.campaign %></h4>
 
-    <h5 class="text-muted">Estado</h5>
+    <h6 class="text-muted">Estado</h6>
     <% if @client.is_active %>
-        <h2>Activo</h2>
+        <h4>Activo</h4>
     <% else %>
-        <h2>Inactivo</h2>
+        <h4>Inactivo</h4>
     <% end %>
 
     <% if @client.is_active %>
-        <h5 class="text-muted">Desactivar usuario</h5>
+        <h6 class="text-muted">Desactivar usuario</h6>
         <a class="btn btn-danger" data-confirm="¿Estas seguro?" href="<%= client_deactivate_path(@client) %>">Desactivar</a>
     <% end %>
+
+    <hr>
+    <h2>Pagos</h2>
+    <div class="card payment-list">
+        <table class="table">
+            <thead class="thead-default">
+                <tr>
+                    <th>#</th>
+                    <th>Fecha inicial</th>
+                    <th>Fecha final</th>
+                    <th>Venta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% if !@client.payments.blank? %>
+                    <% for payment in @client.payments %>
+                        <tr>
+                            <td><%= payment.id %></td>
+                            <td><%= payment.start_date %></td>
+                            <td><%= payment.end_date %></td>
+                            <td><%= payment.sale %></td>
+                        </tr>
+                    <% end %>
+                <% else %>
+                    <tr>
+                        <td colspan="3">Este cliente no registra pagos.</td>
+                    </tr>
+                <% end %>
+            </tbody>
+        </table>
+    </div>
 
 </div>
 
