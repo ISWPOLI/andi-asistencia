@@ -1,0 +1,2 @@
+class InactiveClientsExportation < Exportation
+end
