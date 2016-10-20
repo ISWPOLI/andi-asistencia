@@ -6,7 +6,7 @@ class PaymentImportation < Importation
       last_name: 'Apellidos',
       document_number: 'Cédula',
       cellphone_number: 'Celular',
-      sale_date: 'Fecha',
+      payment_date: 'Fecha',
       amount: 'Valor',
       sale_id: 'Venta'
     }
