@@ -2,7 +2,10 @@ class ImportationController < ApplicationController
 
   def sales
   end
-
+  
+  # 
+  # Main action to import sales files.
+  #
   def import_sales_xls
     file = params[:file]
     importer = SaleImportation.new
@@ -13,7 +16,10 @@ class ImportationController < ApplicationController
 
   def payments
   end
-
+  
+  #
+  # Import payments file
+  #
   def import_payments_xls
     file = params[:file]
     importer = PaymentImportation.new
