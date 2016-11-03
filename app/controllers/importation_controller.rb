@@ -16,7 +16,10 @@ class ImportationController < ApplicationController
 
   def payments
   end
-
+  
+  #
+  # Import payments file
+  #
   def import_payments_xls
     file = params[:file]
     importer = PaymentImportation.new
