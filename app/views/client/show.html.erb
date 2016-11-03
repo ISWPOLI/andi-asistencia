@@ -38,6 +38,7 @@
                     <th>#</th>
                     <th>Fecha inicial</th>
                     <th>Fecha final</th>
+                    <th>Fecha de pago</th>
                 </tr>
             </thead>
             <tbody>
@@ -47,6 +48,7 @@
                             <td><%= payment.id %></td>
                             <td><%= payment.start_date %></td>
                             <td><%= payment.end_date %></td>
+                            <td><%= payment.payment_date %></td>
                         </tr>
                     <% end %>
                 <% else %>
