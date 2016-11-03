@@ -1,5 +1,8 @@
 class ClientController < ApplicationController
-
+  
+  #
+  # Shows the list of clients in the app
+  #
   def index
     @client_list = Client.where(is_active: true)
 
@@ -7,7 +10,10 @@ class ClientController < ApplicationController
       @client_list = Client.where(is_active: false)
     end
   end
-
+  
+  #
+  # Displays the detail page of a client.
+  #
   def show
     @client = Client.find(params[:id])
   end
