@@ -15,21 +15,21 @@
         </div>
 
         <div class="col-md-3">
-            <div class="card card-inverse card-warning">
+            <div class="card card-inverse card-success">
                 <div class="card-block">
-                    <h3 class="card-title">Cargar Pagos</h3>
-                    <p class="card-text">Cargar archivo de cobros exitosos desde entidad.</p>
-                    <a href="<%= payments_path %>" class="btn btn-warning">Cargar</a>
+                    <h3 class="card-title">Generar Facturas</h3>
+                    <p class="card-text">Generación de facturas y archivo de cobros</p>
+                    <a href="#" class="btn btn-success">Ver mas</a>
                 </div>
             </div>
         </div>
 
         <div class="col-md-3">
-            <div class="card card-inverse card-success">
+            <div class="card card-inverse card-warning">
                 <div class="card-block">
-                    <h3 class="card-title">Exportaciones</h3>
-                    <p class="card-text">Clientes activos, inactivos y cobros.</p>
-                    <a href="#" class="btn btn-success">Ver mas</a>
+                    <h3 class="card-title">Generar cobros</h3>
+                    <p class="card-text">Generación de facturas y archivo de cobros</p>
+                    <a href="#" class="btn btn-warning">Ver mas</a>
                 </div>
             </div>
         </div>
@@ -37,10 +37,19 @@
         <div class="col-md-3">
             <div class="card card-inverse card-info">
                 <div class="card-block">
+                    <h3 class="card-title">Cargar Pagos</h3>
+                    <p class="card-text">Cargar archivo de cobros exitosos desde entidad.</p>
+                    <a href="<%= payments_path %>" class="btn btn-info">Cargar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card card-inverse card-danger">
+                <div class="card-block">
                     <h3 class="card-title">Clientes</h3>
-                    <p class="card-text">Ver listado de clientes activos e inactivos</p>
-                    <%= link_to 'Activos', "#{client_index_path}?status=active", class: 'btn btn-sm btn-info' %>
-                    <%= link_to 'Inactivos', "#{client_index_path}?status=inactive", class: 'btn btn-sm btn-info' %>
+                    <p class="card-text">Listado de clientes activos e inactivos</p>
+                    <%= link_to 'Ver clientes', "#{client_index_path}?status=active", class: 'btn btn-danger' %>
                 </div>
             </div>
         </div>
