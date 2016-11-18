@@ -6,24 +6,40 @@ class ClientControllerTest < ActionDispatch::IntegrationTest
     @user = users(:one)
     sign_in @user
 
-    # Create two active clients.
-    Client.objects.create(
-      first_name: 'John',
-      last_name: 'Doe',
-      is_active: true
+    @campaign = Campaign.create(
+      name: 'Olimpica'
     )
 
-    Client.objects.create(
+    # Create two active clients.
+    @client1 = Client.create(
+      first_name: 'John',
+      last_name: 'Doe',
+      is_active: true,
+      campaign: @campaign
+    )
+    @client2 = Client.create(
       first_name: 'Jenny',
       last_name: 'Doe',
-      is_active: true
+      is_active: true,
+      campaign: @campaign
+    )
+    @client3 = Client.create(
+      first_name: 'Jenny',
+      last_name: 'Doe',
+      is_active: false,
+      campaign: @campaign
     )
   end
 
-  test "client list" do
-    get client_index_path
-    assert_container
+  test "active and inactive client list" do
+    get "#{client_index_path}?active=true"
 
+    # Make sure the list has the two names.
+    assert_select "a", @client1.first_name
+    assert_select "a", @client2.first_name
+
+    get "#{client_index_path}?active=false"
+    assert_select "a", @client3.first_name
   end
 
 end
