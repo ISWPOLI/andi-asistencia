@@ -12,6 +12,10 @@ module Myapp
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
+    # Use UTF-8 as the default enconding.
+    config.encoding = "utf-8"
+
     config.autoload_paths << Rails.root.join('lib')
+    config.assets.enabled = true
   end
 end
