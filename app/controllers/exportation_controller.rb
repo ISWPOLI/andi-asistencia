@@ -3,15 +3,16 @@ class ExportationController < ApplicationController
   def generate_bills
   end
 
-
   #
-  # These files are generated with clients that have no payments
-  # in an specific range.
+  # These files are generated with clients that have no payments in the current
+  # month. The charge information is intended to be sent to the entity
+  # that makes the charges.
   #
   def generate_charges
-    xls_path = ActionController::Base.helpers.asset_path('spreadsheets/archivo_de_cobros.xlsx')
-    xlsx = Roo::Spreadsheet.open(xls_path)
-    send_data xlsx.to_csv
+
+    respond_to do |format|
+      format.csv { send_data Client.pendign_payments_csv, filename: 'archivo-de-cobros.csv' }
+    end
   end
 
 end
