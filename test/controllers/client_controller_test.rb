@@ -32,14 +32,26 @@ class ClientControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "active and inactive client list" do
-    get "#{client_index_path}?active=true"
+    get "#{client_index_path}?status=active"
 
     # Make sure the list has the two names.
     assert_select "a", @client1.first_name
     assert_select "a", @client2.first_name
 
-    get "#{client_index_path}?active=false"
+    get "#{client_index_path}?status=inactive"
     assert_select "a", @client3.first_name
+  end
+
+  test "generating active clients reports" do
+    get "#{client_index_path('csv')}?status=active"
+    assert_response :success
+    assert_equal 'text/csv', response.content_type
+  end
+
+  test "generating inactive clients reports" do
+    get "#{client_index_path('csv')}?status=inactive"
+    assert_response :success
+    assert_equal 'text/csv', response.content_type
   end
 
 end
