@@ -1,5 +1,5 @@
 # Andi Asistencia 
-[![Build Status](https://travis-ci.org/ISWPOLI/andi-asistencia.svg?branch=master)](https://travis-ci.org/ISWPOLI/andi-asistencia)
+[![Build Status](https://travis-ci.org/ISWPOLI/andi-asistencia.svg?branch=master)](https://travis-ci.org/ISWPOLI/andi-asistencia) [![Coverage Status](https://coveralls.io/repos/github/ISWPOLI/andi-asistencia/badge.svg)](https://coveralls.io/github/ISWPOLI/andi-asistencia)
 
 Repositorio del codigo fuente de Andi Asistencia, en la parte baja se encuentran links de la documentación.
 
