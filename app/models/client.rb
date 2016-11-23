@@ -36,7 +36,6 @@ class Client < ApplicationRecord
   # Return a list of clients that have payments.
   #
   def self.with_pending_charges
-
     # Clients that that have payments but the last one last date is before today.
     clients_with_active_payments = Payment.where("end_date > ?", Time.zone.now.end_of_day).distinct().pluck('client_id')
 
@@ -46,6 +45,30 @@ class Client < ApplicationRecord
     ).where.not(
       id: [clients_with_active_payments]
     )
+  end
+
+
+  def self.to_csv(is_active: true)
+    attributes = [
+      'Nombres', 'Apellidos', 'Cédula',
+      'Celular', 'Campana', 'Direccion', 'Ciudad'
+    ]
+
+    CSV.generate(headers: true) do |csv|
+      csv << attributes
+
+      Client.where(is_active: is_active).each do |client|
+        csv << [
+          client.first_name,
+          client.last_name,
+          client.document_number,
+          client.cellphone_number,
+          client.campaign.name,
+          client.address,
+          client.city
+        ]
+      end
+    end
   end
 
 end
