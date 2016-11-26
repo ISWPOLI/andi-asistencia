@@ -1,7 +1,13 @@
-<div class="container container-sm">
+<div class="container container-sm client-list">
     <h2 class="text-xs-center">Clientes</h2>
-    <p class="text-muted text-xs-center">Listado de clientes <strong><% if params[:status] == 'active' %>activos<% else %>inactivos<% end %></strong></p>
+    <p class="text-muted text-xs-center">Listado de clientes <strong><% if params[:status] == 'active' %>activos<% else %>inactivos<% end %></strong>, ver <strong><% if params[:status] == 'active' %>inactivos<% else %>activos<% end %></strong></p>
     <br>
+
+    <div class="client-list-actions">
+        <h5>Generar reporte de clientes</h5>
+        <a href="<%= "#{client_index_path('csv')}?status=active" %>" class="btn btn-success">Activos</a>
+        <a href="<%= "#{client_index_path('csv')}?status=inactive" %>" class="btn btn-success">Inactivos</a>
+    </div>
 
     <table class="table">
         <thead class="thead-default">

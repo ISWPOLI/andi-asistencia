@@ -21,4 +21,9 @@ Rails.application.routes.draw do
     post '/payments', to: 'importation#import_payments_xls'
   end
 
+  # Exportations.
+  scope '/exportation' do
+    get '/charges', to: 'exportation#generate_charges'
+  end
+
 end
