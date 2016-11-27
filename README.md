@@ -1,12 +1,12 @@
 # Andi Asistencia 
 [![Build Status](https://travis-ci.org/ISWPOLI/andi-asistencia.svg?branch=master)](https://travis-ci.org/ISWPOLI/andi-asistencia) [![Coverage Status](https://coveralls.io/repos/github/ISWPOLI/andi-asistencia/badge.svg)](https://coveralls.io/github/ISWPOLI/andi-asistencia)
 
-Repositorio del codigo fuente de Andi Asistencia, en la parte baja se encuentran links de la documentación.
+Repositorio del código fuente de Andi Asistencia, en la parte baja se encuentran links de la documentación.
 
 
 ![Screenshot](https://raw.githubusercontent.com/ISWPOLI/andi-asistencia/master/screenshot.png)
 
-## Implemetacion
+## Implemetación
 
 * **Funcionamiento**
   * CRUD de entidades: [Crear usuario](https://github.com/ISWPOLI/andi-asistencia/blob/master/app/views/devise/registrations/new.html.erb)
@@ -14,9 +14,9 @@ Repositorio del codigo fuente de Andi Asistencia, en la parte baja se encuentran
   * 1 Entrega de valor para el negocio: [Como usuario puedo autenticarme en el sistema](https://github.com/ISWPOLI/andi-asistencia/blob/master/app/views/devise/sessions/new.html.erb)
 * **Coherencia con la documentación**
 * **Presentación**:
-  * Despliegue de la solución servidor publico
+  * Despliegue de la solución servidor público
   * [Interface Responsive](https://github.com/ISWPOLI/andi-asistencia/blob/master/app/views/home/index.html.erb) _(compatibilidad móvil)_
-  * [Manejo de repositorios](https://github.com/ISWPOLI/andi-asistencia) _(El integrante del grupo que no registre actividad no tendrá calificación)_
+  * [Manejo de repositorios](https://github.com/ISWPOLI/andi-asistencia)
 
 
 ## Requerimientos 
